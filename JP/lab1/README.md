@@ -148,10 +148,6 @@ CloudFormation を使い、 VPC を作成し、2分おきに10件前後のログ
 
 <img src="../images/architecture_lab1.png">
 
-Lab1 は以上です。選択されているパターンに合わせて次の手順を実施ください。
-
-（1） ニアリアルタイムデータ分析環境（スピードレイヤ）の構築：[Lab1](../lab1/README.md) → [Lab2](../lab2/README.md) → [Lab3](../lab3/README.md)  
-（2） 長期間のデータをバッチ分析する環境（バッチレイヤ）の構築と、パフォーマンスとコストの最適化：[Lab1](../lab1/README.md) → [Lab4](../lab4/README.md) or [Lab5](../lab5/README.md) → [Lab6](../lab6/README.md)  
-（3） すべて実施：[Lab1](../lab1/README.md) → [Lab2](../lab2/README.md) → [Lab3](../lab3/README.md) → [Lab4](../lab4/README.md) → [Lab5](../lab5/README.md) → [Lab6](../lab6/README.md) 
+Lab1 は以上です。
 
 環境を削除される際は、[こちら](../clean-up/README.md)の手順をご覧ください。
