@@ -93,7 +93,7 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
   fluent-plugin-kinesis (2.1.0)
    ```
  
-   3. **Asset** 資料：[4-td-agent2.conf](asset/ap-northeast-1/4-td-agent2.conf
+   3. **Asset** 資料：[4-td-agent2.conf](asset/ap-northeast-1/4-td-agent2.conf)
 
  3-1. 「 **/etc/td-agent/td-agent.conf** 」の中身を削除（vi のコマンドの「:%d」などで削除）し、**Asset** 資料の「 **4-td-agent2.conf** 」ファイルをエディタで開き中身をコピーし、「**delivery_stream_name minilake1** 」の指定を「**delivery_stream_name minilake1-userID** 」に変更して貼り付けます。
 	
