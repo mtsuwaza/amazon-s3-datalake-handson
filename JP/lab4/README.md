@@ -29,9 +29,9 @@ SPDX-License-Identifier: MIT-0
 
  1. AWS マネジメントコンソールのサービス一覧から **Kinesis** を選択し、 Kinesis Data Firehose の **[配信ストリームを作成]** をクリックします。
  
- 2. **[Delivery stream name]** に「 **minilake1**（任意）」と入力し、 **[Next]** をクリックします。
+ 2. **[Delivery stream name]** に「 **minilake1-userID**（任意）」と入力し、 **[Next]** をクリックします。
  
-    **Note：** 「 **minilake1**（任意）」を異なる名前に指定した場合、後続の手順において、「 **/etc/td-agent/td-agent.conf** 」のファイルにある「 **delivery_stream_name minilake1** 」の指定を合わせて変更いただく必要があります。
+    **Note：** 後続の手順において、「 **/etc/td-agent/td-agent.conf** 」のファイルにある「 **delivery_stream_name minilake1** 」の指定を合わせて変更いただく必要があります。
  
  3. **[Data transformation]** を **[Disabled]** 、 **[Convert record format]** を **[Disabled]** のまま、 **[Next]** をクリックします。
  
@@ -57,9 +57,9 @@ SPDX-License-Identifier: MIT-0
 ## Section2：EC2 の設定変更
 ### Step1：IAM ロールのポリシー追加
 
-作成済の「 **handson-minilake**（任意）」の IAM ロールに以下のようにポリシーを追加します。 
+作成済の「 **handson-minilake-userID**（任意）」の IAM ロールに以下のようにポリシーを追加します。 
 
- 1. AWS マネジメントコンソールのサービス一覧から **IAM** を選択し、 **[Identity and Access Management (IAM)]** 画面の左ペインから **[ロール]** を選択し、「 **handson-minilake**（任意）」のロール名をクリックします。
+ 1. AWS マネジメントコンソールのサービス一覧から **IAM** を選択し、 **[Identity and Access Management (IAM)]** 画面の左ペインから **[ロール]** を選択し、「 **handson-minilake-userID**（任意）」のロール名をクリックします。
  
  2. **[アクセス権限]** タブを選択し、 **[ポリシーのアタッチ]** をクリックします。
  
