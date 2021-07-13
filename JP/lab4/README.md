@@ -73,7 +73,7 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
 
    1. Kinesis Data Firehose のプラグインをインストールします。
  
-      **Asset** 資料：[4-cmd.txt](asset/ap-northeast-1/4-cmd.txt)
+      **Asset** 資料：[4-cmd.txt](asset/us-east-1/4-cmd.txt)
  
  ```
  $ sudo su -
@@ -82,7 +82,7 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
  
    2. プラグインのインストールを確認します。
 
-      **Asset** 資料：[4-cmd.txt](asset/ap-northeast-1/4-cmd.txt)
+      **Asset** 資料：[4-cmd.txt](asset/us-east-1/4-cmd.txt)
 
  ```
  # td-agent-gem list | grep plugin-kinesis
@@ -93,7 +93,7 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
   fluent-plugin-kinesis (2.1.0)
    ```
  
-   3. **Asset** 資料：[4-td-agent2.conf](asset/ap-northeast-1/4-td-agent2.conf)
+   3. **Asset** 資料：[4-td-agent2.conf](asset/us-east-1/4-td-agent2.conf)
 
  3-1. 「 **/etc/td-agent/td-agent.conf** 」の中身を削除（vi のコマンドの「:%d」などで削除）し、**Asset** 資料の「 **4-td-agent2.conf** 」ファイルをエディタで開き中身をコピーし、「**delivery_stream_name minilake1** 」の指定を「**delivery_stream_name minilake1-userID** 」に変更して貼り付けます。
 	
@@ -109,10 +109,10 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
  
  **[追記する行の例]**
  
- **Asset** 資料：[4-cmd.txt](asset/ap-northeast-1/4-cmd.txt)
+ **Asset** 資料：[4-cmd.txt](asset/us-east-1/4-cmd.txt)
  
  ```
- export AWS_REGION="ap-northeast-1"
+ export AWS_REGION="us-east-1"
  ```
  
   **Note：** リージョンを変更した場合は、適宜変更します。
@@ -122,7 +122,7 @@ Fluentd から Kinesis Data Firehose にログデータを送信するための�
  
    4. Fluentd を再起動します。
  
-       **Asset** 資料：[4-cmd.txt](asset/ap-northeast-1/4-cmd.txt)
+       **Asset** 資料：[4-cmd.txt](asset/us-east-1/4-cmd.txt)
  
  ```
  # /etc/init.d/td-agent restart
